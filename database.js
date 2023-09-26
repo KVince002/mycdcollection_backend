@@ -12,5 +12,7 @@ const pool = new Pool({
 })
 
 module.exports ={
-	query: (text, query) => pool.query(text, query)
+	// regular query
+	query: (text, query) => pool.query(text, query),
+	pool,
 }
