@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const database = require("../database")
-const {queryCD, pool} = require("../database");
+const database = require("../db/database")
+const {queryCD, pool} = require("../db/database");
 const e = require("express");
 
 /* GET pages about cds */
