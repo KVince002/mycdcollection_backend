@@ -22,6 +22,7 @@ router.get('/fetchallcds', async (req, res, next) => {
   });
 
 // GET - specific cd
+// Todo: Handle if the ID does not exist
 router.get("/cds/:cdItem", (req, res) => {
 console.log(`/cds/:cdItem param is ${req.params.cdItem}`);
 const paramInt = parseInt( req.params.cdItem);
