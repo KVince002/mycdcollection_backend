@@ -11,8 +11,10 @@ const pool = new Pool({
 	allowExitOnIdle: true
 })
 
+const AllCDs = () => {
+  
+}
+
 module.exports ={
-	// regular query
-	query: (text, query) => pool.query(text, query),
 	pool,
 }
